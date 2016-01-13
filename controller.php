@@ -11,7 +11,5 @@ foreach ($people as $person) {
 }
 
 FileHandler::writeToFile($humanCollection, DB_FILE);
-$col = FileHandler::readFromFile(DB_FILE);
 
-echo $humanCollection->serialize();
-var_dump($col);
+header('Location: ./list.php');
