@@ -1,7 +1,7 @@
 # Dependencies can be installed with
 composer install
 
-# App can be run with
+# App can be run with (was developed with php-7.0.2)
 php -S localhost:8080
 
 # Tests can be run with
