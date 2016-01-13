@@ -1,0 +1,20 @@
+# Dependencies can be installed with
+composer install
+
+# App can be run with
+php -S localhost:8080
+
+# Tests can be run with
+phpunit --bootstrap ./autoload.php ./tests
+
+# Code Entry point
+./init.php
+
+# All used classes are in
+./src/
+
+# Views
+./store.php
+./list.php
+./index.php
+
