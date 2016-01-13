@@ -8,7 +8,8 @@ echo "<hr>";
 $col = $services['file_handler']->readFromFile(DB_FILE);
 
 foreach ($col->collection as $person) {
-    echo "<div> First Name : {$person->firstname}";
-    echo "<div> Surname Name : {$person->surname}";
+    echo "<div> ID : {$person->getId()}";
+    echo "<div> First Name : {$person->getFirstname()}";
+    echo "<div> Surname Name : {$person->getSurname()}";
     echo "<hr>";
 }
