@@ -1,26 +1,17 @@
 <?php
 
-class Human {
-
-    public $firstname, $surname;
-
-    public function __construct($firstname, $surname) {
-        $this->firstname = $firstname;
-        $this->surname = $surname;
-    }
-}
+include_once 'init.php';
 
 $people = $_GET['people'];
 
-//echo '<pre>';
-//var_dump($people);
-
-$ppl = [];
+$humanCollection = new HumanCollection();
 
 foreach ($people as $person) {
-    //var_dump($person);
-    //echo $person['firstname'];
-    $ppl[] = new Human($person['firstname'], $person['surname']);
+    $humanCollection->add(new Human($person['firstname'], $person['surname']));
 }
 
-var_dump($ppl);
+FileHandler::writeToFile($humanCollection, DB_FILE);
+$col = FileHandler::readFromFile(DB_FILE);
+
+echo $humanCollection->serialize();
+var_dump($col);
