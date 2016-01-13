@@ -1,0 +1,12 @@
+{
+    "name": "root/tech-test",
+    "authors": [
+        {
+            "name": "famouscake",
+            "email": "peter.g.hristov@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/validator": "^3.0"
+    }
+}

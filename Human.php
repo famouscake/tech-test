@@ -33,7 +33,7 @@ class Human {
         return $this->surname;
     }
 
-    public function __toArray() {
+    public function toArray() {
         return [
             'firstname' => $this->firstname,
             'surname' => $this->surname
