@@ -1,4 +1,4 @@
-<form action="controller.php">
+<form action="store.php">
     <table>
         <tr>
             <th>First name</th>
