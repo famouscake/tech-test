@@ -7,6 +7,6 @@
         }
     ],
     "require": {
-        "symfony/validator": "^3.0"
+       "symfony/validator": "^3.0"
     }
 }

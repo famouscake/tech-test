@@ -1,6 +1,5 @@
 <?php
 
-// Constants and config variables
 const PROJECT_DIR = __DIR__;
 const DB_FILE = PROJECT_DIR.'/db/dbfile.json';
 
@@ -13,9 +12,3 @@ spl_autoload_register(function ($classname) {
         include_once $filename;
     }
 });
-
-
-// Collection of any singletons I need
-$services = [
-    'file_handler' => new FileHandler(),
-];
