@@ -1,15 +1,13 @@
 <?php
 
-class FileHandler {
-
+class FileHandler
+{
     // This'll get very slow for large files, consider SQLite
     public function writeToFile(HumanCollection $collection, string $filename) {
 
         // Can't just append to a JSON, wouldn't be valid, I have to parse and save all of it.
         if (file_exists($filename)) {
             $serializedData = json_decode(file_get_contents($filename), true);
-
-            var_dump($serializedData);
 
             foreach ($serializedData as $person) {
                 $collection->add(new Human($person['firstname'], $person['surname']));

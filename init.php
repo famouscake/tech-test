@@ -19,3 +19,7 @@ spl_autoload_register(function ($classname) {
 $services = [
     'file_handler' => new FileHandler(),
 ];
+
+// Improvised Navbar
+echo "<div><a href='./index.php'>Add New Humans.</a></div>";
+echo "<div><a href='./list.php'>List Humans.</a></div>";
