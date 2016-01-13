@@ -7,6 +7,9 @@ php -S localhost:8080
 # Tests can be run with
 phpunit --bootstrap ./autoload.php ./tests
 
+# File used for storing data
+./db/dbfile.json
+
 # Code Entry point
 ./init.php
 
@@ -17,4 +20,3 @@ phpunit --bootstrap ./autoload.php ./tests
 ./store.php
 ./list.php
 ./index.php
-
